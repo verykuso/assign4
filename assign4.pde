@@ -174,7 +174,7 @@ void draw(){
                 if( (fighterX>=enemyX[i]&&fighterX<=enemyX[i]+61) &&((fighterY>=enemyY[i]&&fighterY<=enemyY[i]+61)||(fighterY+51>=enemyY[i]&&fighterY+51<=enemyY[i]+61))  )
                  {
                     hpRate-=2;
-                   if(frameCount%6==0) image(flame[f],fighterX-30,fighterY);
+                  image(flame[f],fighterX-30,fighterY); if(frameCount%6==0) image(flame[f],fighterX-30,fighterY);
                    
                     enemyY[i]=888;//let enemy will not hit again
                  }
@@ -190,7 +190,7 @@ void draw(){
                 if( (shootX[j]>=enemyX[i]&&shootX[j]<=enemyX[i]+61) &&((shootY[j]>=enemyY[i]&&shootY[j]<=enemyY[i]+61)||(shootY[j]+27>=enemyY[i]&&shootY[j]+27<=enemyY[i]+61))  )
                  {
                   fire[i]=false;
-                  if(frameCount%6==0) image(flame[f],shootX[j]-30,shootY[j]);
+                  image(flame[f],shootX[j]-30,shootY[j]);if(frameCount%6==0) image(flame[f],shootX[j]-30,shootY[j]);
                     shootX[j]=-999;shootY[j]=999;//let bullet will not hit again
                     enemyY[i]=888;//let enemy will not hit again
                  }
@@ -228,7 +228,7 @@ void draw(){
                 if( (fighterX>=enemyX[i]&&fighterX<=enemyX[i]+61) &&((fighterY>=enemyY[i]&&fighterY<=enemyY[i]+61)||(fighterY+51>=enemyY[i]&&fighterY+51<=enemyY[i]+61))  )
                  {
                     hpRate-=2;
-                    if(frameCount%6==0) image(flame[f],fighterX-30,fighterY);
+                    image(flame[f],fighterX-30,fighterY);if(frameCount%6==0) image(flame[f],fighterX-30,fighterY);
                     enemyY[i]=888;//let enemy will not hit again
                  }
                     
@@ -244,7 +244,7 @@ void draw(){
                 if( (shootX[j]>=enemyX[i]&&shootX[j]<=enemyX[i]+61) &&((shootY[j]>=enemyY[i]&&shootY[j]<=enemyY[i]+61)||(shootY[j]+27>=enemyY[i]&&shootY[j]+27<=enemyY[i]+61))  )
                  {
                   fire[i]=false;
-                  if(frameCount%6==0) image(flame[f],shootX[j]-30,shootY[j]);
+                  image(flame[f],shootX[j]-30,shootY[j]);if(frameCount%6==0) image(flame[f],shootX[j]-30,shootY[j]);
                     shootX[j]=-999;shootY[j]=999;//let bullet will not hit again
                     enemyY[i]=888;//let enemy will not hit again
                  }
@@ -290,7 +290,7 @@ void draw(){
               if( (fighterX>=enemyX1[i][j]&&fighterX<=enemyX1[i][j]+61) &&((fighterY>=enemyY1[i][j]&&fighterY<=enemyY1[i][j]+61)||(fighterY+51>=enemyY1[i][j]&&fighterY+51<=enemyY1[i][j]+61))  )
                {
                     hpRate-=2;
-                   if(frameCount%6==0) image(flame[f],fighterX-30,fighterY);
+                   image(flame[f],fighterX-30,fighterY);if(frameCount%6==0) image(flame[f],fighterX-30,fighterY);
                     enemyY1[i][j]=1888;//let enemy will not hit again
                      }
       
@@ -308,7 +308,7 @@ void draw(){
                 if( (shootX[s]>=enemyX1[i][j]&&shootX[s]<=enemyX1[i][j]+61) &&((shootY[s]>=enemyY1[i][j]&&shootY[s]<=enemyY1[i][j]+61)||(shootY[s]+27>=enemyY1[i][j]&&shootY[s]+27<=enemyY1[i][j]+61))  )
                  {
                   fire[s]=false;
-                  if(frameCount%6==0) image(flame[f],shootX[s]-30,shootY[s]);
+                  image(flame[f],shootX[s]-30,shootY[s]);if(frameCount%6==0) image(flame[f],shootX[s]-30,shootY[s]);
                     shootX[s]=-999;shootY[s]=4999;//let bullet will not hit again
                     enemyY1[i][j]=2888;//let enemy will not hit again
                  }
